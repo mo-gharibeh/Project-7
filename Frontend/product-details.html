@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from spacingtech.com/html/banno/banno-ltr/product-template4.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 18:48:14 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A best stylish, creative, modern responsive template for different eCommerce business or industries." />
+    <meta name="keywords"
+        content="food template, bakery products, html, eCommerce html template, responsive, pizza, burger, furniture, mobile, watches, electronics, computers accessories, toys, jewellery, restaurant accessories" />
+    <meta name="author" content="spacingtech_webify">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Banno - The Bakery & Chocolate eCommerce HTML5 Template</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.png">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- magnific-popup css -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <!--fether css -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css">
+    <!-- owl css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <!-- swiper-bundle css -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- product-page css -->
+    <link rel="stylesheet" type="text/css" href="css/product-page.css">
+    <!-- blog-page css -->
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+    <style>
+        #commentText {
+                width: 1110px;
+                height: 125.6px;
+                background-color: #FFFFFF;
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            
+            button {
+                color: #C19D60;
+                font-size: 16px;
+                padding: 13px 30px;
+                background-color: rgba(0, 0, 0, 0);
+                text-transform: uppercase;
+                font-weight: 400;
+                border: 2px solid #C19D60;
+                border-radius: 0px;
+                letter-spacing: 0.5px;
+                line-height: 1;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            
+            button:hover {
+                background-color: #C19D60;
+                color: #FFFFFF;
+            }
+            
+            button:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(193, 157, 96, 0.5);
+            }
+            
+            #responseMessage {
+                text-align: center;
+                margin-top: 20px;
+                color: #333;
+            }
+            
+            .product_details_info .pro-nprist .product-info .product-quantity-action {
+                display: flex;
+                align-items: baseline;
+                flex-wrap: wrap;
+            }
+            
+            .blog-article-wrapper {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .blog-article-wrap {
+                margin-bottom: 20px;
+            }
+            
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            label.required {
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: #333;
+            }
+            
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                margin-bottom: 12px;
+                box-sizing: border-box;
+            }
+            
+            button {
+                color: #c19d60;
+                font-size: 16px;
+                padding: 0;
+                background-color: rgba(0, 0, 0, 0);
+                text-transform: uppercase;
+                font-weight: 400;
+                border: 2px solid #c19d60;
+                border-radius: 0px;
+                letter-spacing: 0.5px;
+                line-height: 1;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            
+            button:hover {
+                background-color: #c19d60;
+                color: #fff;
+            }
+            
+            .product-rating {
+                display: flex;
+            }
+            
+            .star {
+                font-size: 2rem;
+                color: #d3d3d3;
+                cursor: pointer;
+                transition: color 0.2s;
+            }
+            
+            .product-rating .star:hover {
+                color: #f39c12;
+            }
+            
+            .star.selected {
+                color: #f39c12;
+            }
+            
+            .product-rating .star:hover~.star {
+                color: #d3d3d3;
+            }
+            
+            .product_details_info .pro-nprist .product-info .product-quantity-action {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            
+            .cmt-info-wrap {
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+            
+            .comment-info {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+            }
+            
+            .comment-avtar {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            
+            .review-name {
+                margin-right: 10px;
+            }
+            
+            .avtar-cmt {
+                display: inline-block;
+                background-color: #ccc;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 50%;
+                font-weight: bold;
+            }
+            
+            .cmt-auth {
+                font-size: 14px;
+            }
+            
+            .review-info {
+                font-size: 12px;
+                color: #888;
+            }
+            
+            .comment-content {
+                margin-top: 10px;
+            }
+            
+            .comment-desc p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 0;
+                color: #333;
+            }
+            .pro-style4 .product-description-tab .product-tab .product-description {
+                padding: 0px 10px;
+            }
+            .collapse p{
+                padding: 20px;
+            }
+
+            /* Container for images */
+.swiper-slide .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure all images are uniform */
+.swiper-slide .product-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures image covers the container */
+  max-height: 200px; /* Set max height as needed */
+}
+
+/* Center text and align content */
+.swiper-slide .product-content {
+  text-align: center;
+}
+
+
+
+
+        /* General styling for stars */
+        .product-rating {
+            display: flex;
+        }
+
+        /* Default star style */
+        .star {
+            font-size: 2rem;
+            /* Adjust size as needed */
+            color: #d3d3d3;
+            /* Light gray for unselected stars */
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        /* Highlight the star that is hovered */
+        .product-rating .star:hover {
+            color: #f39c12;
+            /* Gold color for hover effect */
+        }
+
+        /* Highlight selected stars */
+        .star.selected {
+            color: #f39c12;
+            /* Gold color for selected stars */
+        }
+
+        /* Make sure only the hovered star is affected */
+        .product-rating .star:hover~.star {
+            color: #d3d3d3;
+            /* Gray color for stars to the right of the hovered star */
+        }
+
+        .product_details_info .pro-nprist .product-info .product-quantity-action {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .blog-article-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .blog-article-wrap {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label.required {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            color: #c19d60;
+            font-size: 16px;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 400;
+            border: 2px solid #c19d60;
+            border-radius: 0px;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c19d60;
+            color: #fff;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(193, 157, 96, 0.5);
+        }
+
+        #responseMessage {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .slider-content {
+            height: 650px;
+            align-items: center;
+        }
+
+        .user-actions {
+            display: flex;
+            /* Use flexbox to align items in a row */
+            align-items: center;
+            /* Center items vertically */
+        }
+
+        .user-actions .acc-ti {
+            margin-right: 15px;
+            /* Add space between the links */
+        }
+
+        .user-actions .acc-ti:last-child {
+            margin-right: 0;
+            /* Remove margin from the last item */
+        }
+
+        .wishlist-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+
+                    /* Ensure all images inside the swiper slides have the same size */
+.swiper-slide .product-image {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix the height for the image container to make sure images fit uniformly */
+.swiper-slide .product-image img {
+  width: 100%; /* Make image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  max-height: 200px; /* Adjust the max-height as needed */
+}
+
+/* Optional: Ensure product-content section fits well */
+.swiper-slide .product-content {
+  text-align: center;
+}
+    </style>
+</head>
+
+<body>
+ <!-- top-notification start -->
+ <section class="top-notification-bar">
+    <div class="offer-text-wrap">
+        <ul>
+            <li class="text1">
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over 50JOD!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Sign up and enjoy 10% off your first sweet order!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order your favorite candies online. Call us at +962 787 585666</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over $50!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Join our Sweet Treats Club and get exclusive offers!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order online or call us at +962 787 585666</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over 50JOD!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Subscribe for special discounts on candies and sweets!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order online or call us at +962 787 585666</p>
+                </div>
+            </li>
+            <li class="text2">
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over 50JOD!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Sign up and enjoy 10% off your first sweet order!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order your favorite candies online. Call us at +962 787 585666</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over 50JOD!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Join our Sweet Treats Club and get exclusive offers!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order online or call us at +962 787 585666</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Free shipping on orders over 50JOD!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Subscribe for special discounts on candies and sweets!</p>
+                </div>
+                <div class="offer-text-block">
+                    <p>Order online or call us at +962 787 585666</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>
+<!-- top-notification end -->
+<!-- header-start -->
+<header class="header-area">
+    <div class="header-main-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="header-main">
+                        <!-- header megamenu start -->
+                        <div class="header-element megamenu-content">
+                            <div class="mainwrap collapse show" id="main-collapse">
+                                <ul class="main-menu">
+                                    <li class="menu-link">
+                                        <a href="index-2.html" class="link-title">
+                                            <span class="sp-link-title">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="blog-grid.html" class="link-title">
+                                            <span class="sp-link-title">Categories</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#desk-blog" data-bs-toggle="collapse"
+                                            class="link-title link-title-lg">
+                                            <span class="sp-link-title">Categories</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <div class="menu-dropdown single-menu collapse" id="desk-blog">
+                                            <ul class="container ul p-0" id="CategoriesList">
+                                                <!-- Content from API -->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a onclick="clearCategoryID()" class="link-title">
+                                            <span class="sp-link-title">Product</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="about-us-2.html" class="link-title">
+                                            <span class="sp-link-title">About</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="contact-us-2.html" class="link-title">
+                                            <span class="sp-link-title">Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header megamenu end -->
+                        <!-- header logo start -->
+                        <div class="header-element logo">
+                            <a href="index.html" class="theme-header-logo">
+                                <img src="img/logo/Screenshot_2024-09-10_112530-removebg-preview.png"
+                                    style="width: 400px;" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <!-- header logo end -->
+                        <!-- right-block-box start-->
+                        <div class="header-element right-block-box">
+                            <ul class="shop-element">
+                                <li class="side-wrap toggle-wrap">
+                                    <!-- button toggler start -->
+                                    <button class="toggler-button"><i class="feather-menu"></i></button>
+                                    <!-- button toggler end -->
+                                </li>
+                                <li class="side-wrap search-wrap">
+                                    <a href="#seachmodal" class="search-popup" data-bs-toggle="modal">
+                                        <i class="feather-search"></i>
+                                    </a>
+                                </li>
+                                <!-- <li class="side-wrap wishlist-wrap">
+                                    <a href="wishlist-product.html" class="header-wishlist-btn">
+                                        <span class="wishlist-icon">
+                                            <i class="feather-heart"></i>
+                                            <span class="wishlist-counter">5</span>
+                                        </span>
+                                        <div class="icon-heading">
+                                            <h6 class="wishlist-title">My Wishlist</h6>
+                                            <span>(<span class="wishlist-counter">5</span> Item)</span>
+                                        </div>
+                                    </a>
+                                </li> -->
+                                <li class="side-wrap cart-wrap">
+                                    <div class="shopping-widget">
+                                        <div class="shopping-cart">
+                                            <a href="javascript:void(0)" class="cart-count">
+                                                <span class="cart-icon">
+                                                    <i class="feather-shopping-bag"></i>
+                                                    <span class="bigcounter">8</span>
+                                                </span>
+                                                <div class="icon-heading">
+                                                    <h6 class="wishlist-title">MY CART</h6>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="side-wrap user-wrap">
+                                    <div class="acc-desk-header">
+                                        <div class="acc-title" id="loginContainer">
+                                            <!-- content from JS -->
+                                        </div>
+                                        <div class="acc-title-lg">
+                                            <a href="login-account.html"><i class="feather-user"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- right-block-box end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
+    <!-- main section start-->
+    <main>
+        <!-- breadcrumb start -->
+        <section class="breadcrumb-area">
+            <div class="container">
+                <div class="col">
+                    <div class="row">
+                        <div class="breadcrumb-index">
+                            <!-- breadcrumb main-title start-->
+                            <div class="breadcrumb-title">
+                                <h2>Creamy for rasmalai</h2>
+                            </div>
+                            <!-- breadcrumb main-title end-->
+                            <!-- breadcrumb-list start -->
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-item-link">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item-link">
+                                    <span>Creamy for rasmalai</span>
+                                </li>
+                            </ul>
+                            <!-- breadcrumb-list end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb end -->
+        <section class="product-details-page pro-style4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="pro_details_pos pro_details_left_pos">
+                            <!-- Product slider start -->
+                            <div class="product_detail_slider product_details_lr product_details product_details_sticky"
+                                id="ProductsImage">
+                                <!-- Product slider start -->
+                                <div class="product_detail_img product_detail_img_left">
+                                    <div class="product_img_top">
+                                        <button class="full-view"><i class="bi bi-arrows-fullscreen"></i></button>
+                                        <!-- blog slick slider start -->
+                                        <div class="style4-slider-big slick-slider">
+                                            <!-- سيتم إدراج الصور الكبيرة هنا -->
+                                        </div>
+                                    </div>
+                                    <!-- blog slick slider end -->
+                                    <!-- small slick-slider start -->
+                                    <div class="pro-slider">
+                                        <div class="style4-slider-small pro-detail-slider">
+                                            <!-- سيتم إدراج الصور الصغيرة هنا -->
+                                        </div>
+                                    </div>
+                                    <!-- small slick-slider end -->
+                                </div>
+                                <!-- Product slider end -->
+                            </div>
+
+
+                            <!-- peoduct detail start -->
+                            <div class="product_details_wrap product_details_lr product_details">
+                                <div class="product_details_info">
+                                    <div class="pro-nprist">
+                                        <div class="product-info">
+                                            <!-- product-title start -->
+                                            <div class="product-title" id="TitleJS">
+                                                <!-- <h2>Creamy for rasmalai</h2> -->
+                                            </div>
+                                            <!-- product-title end -->
+                                        </div>
+                                        <div class="product-info">
+                                            <!-- product-rating start -->
+                                            <div class="product-info">
+                                                <!-- product-rating start -->
+                                                <div class="product-rating" id="ProductRating">
+                                                    <span class="star-rating">
+                                                        <!-- النجوم ستضاف هنا بواسطة JavaScript -->
+                                                    </span>
+                                                    <span class="spr-badge-caption" id="noReview">No reviews</span>
+                                                </div>
+                                                <!-- product-rating end -->
+                                            </div>
+                                        </div>
+
+                                        <div class="product-info" id="Priice">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-inventory">
+                                                <div class="product-variant">
+                                                    <h6>Availability:</h6>
+                                                    <span id="stock-status" class="stock-qty in-stock text-success"
+                                                        style="display:none;">
+                                                        <span>In stock<i class="bi bi-check2"></i></span>
+                                                    </span>
+                                                    <span id="near-penetration"
+                                                        class="stock-qty near-penetration text-warning"
+                                                        style="display:none;">
+                                                        <span>Nearing finished</span>
+                                                    </span>
+                                                    <span id="out-of-stock" class="stock-qty out-stock text-danger"
+                                                        style="display:none;">
+                                                        <span>Out of stock</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="pro-detail-action">
+                                                <form method="get" class="cart">
+                                                    <div class="product-variant-option">
+                                                        <div class="swatch-variant">
+                                                            <div class="swatch clearfix Color">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <form method="post" class="cart">
+                                                <div class="pro-detail-button">
+                                                    <div class="product-quantity-button">
+                                                        <div class="product-quantity-action" id="AddedToCart">
+                                                            <!-- <a onclick="Buy()" href="cart-page.html"
+                                                                class="btn btn-cart btn_theme">
+                                                                <span>Buy now</span>
+                                                            </a> -->
+                                                            <a onclick="addToCart()" href="#"
+                                                                class="btn add-to-cart ajax-spin-cart">
+                                                                <span>Add to Cart</span>
+                                                            </a> <br>
+                                                            <h6>Quantity:</h6>
+                                                            <div class="product-quantity">
+                                                                <div class="cart-plus-minus">
+                                                                    <button onclick="minus(event)"
+                                                                        class="dec qtybutton minus"><i
+                                                                            class="feather-minus"></i></button>
+                                                                    <input type="text" name="quantity" value=1
+                                                                        id="quantity" readonly>
+                                                                    <button onclick="plus(event)"
+                                                                        class="inc qtybutton plus"><i
+                                                                            class="feather-plus"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-actions">
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="form-group">
+                                                <a href="#deliver-modal" data-bs-toggle="modal">Delivery &amp;
+                                                    return</a>
+                                                <!-- <a href="#que-modal" data-bs-toggle="modal">Ask a question</a> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal fade deliver-modal" id="deliver-modal" tabindex="-1"
+                                            style="display: none;" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="pop-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"><i class="feather-x"></i></button>
+                                                        <div class="delivery-block">
+                                                            <div class="space-block">
+                                                                <h4>Delivery</h4>
+                                                                <p>All orders shipped with UPS Express.</p>
+                                                                <p>Always free shipping for orders over US $250.</p>
+                                                                <p>All orders are shipped with a UPS tracking number.
+                                                                </p>
+                                                            </div>
+                                                            <div class="space-block">
+                                                                <h4>Returns</h4>
+                                                                <p>Items returned within 14 days of their original
+                                                                    shipment date in same as new condition will be
+                                                                    eligible for a full refund or store credit.</p>
+                                                                <p>Refunds will be charged back to the original form of
+                                                                    payment used for purchase.</p>
+                                                                <p>Customer is responsible for shipping charges when
+                                                                    making returns and shipping/handling fees of
+                                                                    original purchase is non-refundable.</p>
+                                                                <p>All sale items are final purchases.</p>
+                                                            </div>
+                                                            <div class="space-block">
+                                                                <h4>Help</h4>
+                                                                <p>Give us a shout if you have any other questions
+                                                                    and/or concerns.</p>
+                                                                <p>Email:<a
+                                                                        href="mailto:contact@domain.com">demo@gmail.com</a>
+                                                                </p>
+                                                                <p>Phone:<a href="tel:+1(23)456789">+1 (23) 456 789</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <p><span>🚚</span> Item will be delivered on or before <span
+                                                    id="ten-days-ahead">3 Hours</span></p>
+                                        </div>
+                                        <div class="product-info">
+
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="share-icons">
+                                                <h6>Share:</h6>
+                                                <ul class="pro_social_link">
+                                                    <li class="facebook">
+                                                        <a href="https://www.facebook.com/" class="facebook"><i
+                                                                class="fab fa-facebook-f"></i></a>
+                                                    </li>
+                                                    <li class="twitter">
+                                                        <a href="https://twitter.com/" class="twitter"><i
+                                                                class="fab fa-twitter"></i></a>
+                                                    </li>
+                                                    <li class="twitter">
+                                                        <a href="https://web.telegram.org/" class="twitter"><i
+                                                                class="fab fa-telegram"></i></a>
+                                                    </li>
+                                                    <li class="pinterest">
+                                                        <a href="https://in.pinterest.com/" class="pinterest"><i
+                                                                class="fab fa-pinterest-p"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-payment-image">
+                                                <a href="javascript:void(0)" class="payment-icon">
+                                                    <img src="img/payment/visa.svg" class="img-fluid" alt="visa">
+                                                    <img src="img/payment/master.svg" class="img-fluid" alt="master">
+                                                    <img src="img/payment/express.svg" class="img-fluid" alt="express">
+                                                    <img src="img/payment/paypal.svg" class="img-fluid" alt="paypal">
+                                                    <img src="img/payment/diners.svg" class="img-fluid" alt="diners">
+                                                    <img src="img/payment/discover.svg" class="img-fluid"
+                                                        alt="discover">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section class="product-description-tab">
+                                    <div class="product-tab" id="collapse-tab">
+                                        <div class="tab">
+                                            <a href="#collapse-description" class="tab-title collapsed"
+                                                data-bs-toggle="collapse" aria-expanded="true">
+                                                <h6 class="tab-name">Description</h6>
+                                                <span class="tab-icon"><i class="bi bi-plus"></i></span>
+                                            </a>
+                                            <div class="collapse show" id="collapse-description"
+                                                data-bs-parent="#collapse-tab">
+                                                <div class="product-description">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab">
+                                            <a href="#collapse-reviews" class="tab-title collapsed"
+                                                data-bs-toggle="collapse">
+                                                <h6 class="tab-name">Reviews</h6>
+                                                <span class="tab-icon"><i class="bi bi-plus"></i></span>
+                                            </a>
+                                            <div class="collapse" id="collapse-reviews" data-bs-parent="#collapse-tab">
+                                                <div id="product-reviews">
+                                                    <div class="spr-container">
+                                                        <div class="spr-header">
+                                                            <h2 class="spr-header-title">Customer reviews</h2>
+                                                            <div class="spr-summary rte">
+                                                                <span class="spr-summary-caption">
+                                                                    <span class="spr-summary-caption"
+                                                                        id="review-caption">No reviews yet</span>
+                                                                </span>
+                                                                <span class="spr-summary-actions">
+                                                                    <a href="#add-review" data-bs-toggle="collapse"
+                                                                        class="spr-summary-actions-newreview">Write a
+                                                                        review</a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="spr-content">
+                                                            <div class="spr-form collapse" id="add-review">
+                                                                <form method="post" class="new-review-form"
+                                                                    id="ratingForm">
+                                                                    <h3 class="spr-form-title">Write a review</h3>
+                                                                    <fieldset class="spr-form-review">
+                                                                        <div class="spr-form-review-rating">
+                                                                            <label class="spr-form-label">Rating</label>
+                                                                            <div class="product-rating"
+                                                                                id="rating-stars">
+                                                                                <span class="star"
+                                                                                    data-value="1">&#9733;</span>
+                                                                                <span class="star"
+                                                                                    data-value="2">&#9733;</span>
+                                                                                <span class="star"
+                                                                                    data-value="3">&#9733;</span>
+                                                                                <span class="star"
+                                                                                    data-value="4">&#9733;</span>
+                                                                                <span class="star"
+                                                                                    data-value="5">&#9733;</span>
+                                                                            </div>
+                                                                            <input type="hidden" id="ratingValue"
+                                                                                name="ratingValue">
+                                                                        </div>
+                                                                    </fieldset>
+                                                                    <fieldset class="spr-form-actions">
+                                                                        <input type="submit" name="q"
+                                                                            class="spr-button spr-button-primary button button-primary btn btn-primary"
+                                                                            value="Submit Review">
+                                                                    </fieldset>
+                                                                </form>
+
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- peoduct detail end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="article-area section-ptb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="blog-article-wrapper left-side">
+                                <div class="blog-article-wrap blog-article">
+                                    <!-- blog post comment start -->
+                                    <form id="CommentForm" onsubmit="AddNewComment()">
+                                    <div class="blog-comments">
+                                        <div class="review_comment">
+                                            <div class="cmt-tit-count" id="CmtTitCount">
+                                                
+                                            </div>
+                                            <div class="cmt-info-wrap">
+                                                <div class="comment-info" id="AddNewComment">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-comment-form" id="NewCommentByUser">
+                                            
+                                        </div>
+                                    </div>
+                                    <label class="required" for="commentText">Comment</label>
+                                    <textarea
+                                    id="commentText"
+                                    name="commentText"
+                                    rows="4"
+                                    required
+                                    placeholder="Add Your Comment Here!"
+                                    ></textarea>
+                            
+                                    <button type="submit">Submit Comment</button>
+                                    </form>
+                                    <div
+                                        id="responseMessage"
+                                        style="text-align: center; margin-top: 20px"
+                                    ></div>
+                                    <!-- blog post comment end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="related-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-related">
+                            <!-- related-pro. title start -->
+                            <div class="section-capture">
+                                <div class="section-title">
+                                    <div class="section-cont-title">
+                                        <h2>
+                                        <span>Related product</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- related-pro. title end -->
+                            <!-- related-pro. slider start -->
+                            <!-- Swiper -->
+<div class="related-slider">
+<div class="product-related-slider swiper" id="related-slider">
+  <div class="swiper-wrapper">
+    <!-- Products will be inserted here by JavaScript -->
+  </div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <!-- Optional Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+
+                            <!-- related-pro. slider start -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-warp bt section-ptb">
+            <div class="container-fluid">
+                <div class="row">
+                    <div lang="col">
+                        <div class="section-capture">
+                            <div class="section-title">
+                                <span class="sub-title">@Our instagram</span>
+                                <h2>Follow on instagram</h2>
+                            </div>
+                        </div>
+                        <div class="insta-slider owl-carousel owl-theme" id="insta-slider">
+                            <div class="item">
+                                <a href="javascript:void(0)" class="banner-hover">
+                                    <img src="img/service/cat1.png" class="img-fluid" alt="backery-instagram-01">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="banner-hover">
+                                    <img src="img/service/cat22.png" class="img-fluid" alt="backery-instagram-02">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="banner-hover">
+                                    <img src="img/service/cat3.png" class="img-fluid" alt="backery-instagram-03">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="banner-hover">
+                                    <img src="img/service/cat4.png" class="img-fluid" alt="backery-instagram-04">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="banner-hover">
+                                    <img src="img/service/cat2.png" class="img-fluid" alt="backery-instagram-05">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end-->
+    <footer>
+        <div class="footer-top-area section-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-list-wrap">
+                            <ul class="footer-list">
+                                <li class="ftlink-li footer-company-detail">
+                                    <div class="footer-logo">
+                                        <a href="index.html" class="theme-footer-logo">
+                                            <img src="img/logo/logo.png" class="img-fluid" alt="logo">
+                                        </a>
+                                    </div>
+                                    <div class="footer-details">
+                                        <p>Lorem ipsum is not simply random text roots to popular pular belief It has
+                                            roots in a piece of classic</p>
+                                    </div>
+                                </li>
+                                <li class="ftlink-li">
+                                    <h2 class="ft-title">Information</h2>
+                                    <div class="footer-wrap-menu">
+                                        <ul class="footer-sublist">
+                                            <li class="ftsublink-li">
+                                                <a href="about-us.html" class="ft-sublink">About story</a>
+                                            </li>
+                                            <li class="ftsublink-li">
+                                                <a href="privacy-policy.html" class="ft-sublink">Privacy policy</a>
+                                            </li>
+                                            <li class="ftsublink-li">
+                                                <a href="order-history.html" class="ft-sublink">My order</a>
+                                            </li>
+                                            <li class="ftsublink-li">
+                                                <a href="track-page.html" class="ft-sublink">Track order</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ftlink-li store-contact">
+                                    <h2 class="ft-title">Contact us</h2>
+                                    <div class="footer-wrap-menu">
+                                        <div class="contact">
+                                            <a href="tel:+00-1234567890" class="con-add">+00-1234567890</a>
+                                            <a href="mailto:demo@support.com" class="con-add">demo@support.com</a>
+                                        </div>
+                                        <div class="address">
+                                            <p>14 Ringe lane, las vegas,</p>
+                                            <p>nv, 89156 united states</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ftlink-li store-open">
+                                    <h2 class="ft-title">Store open</h2>
+                                    <div class="footer-wrap-menu">
+                                        <div class="time">
+                                            <p>Mon to Thu : 8:30AM to 6:30PM</p>
+                                            <p>Fri to Sat : 8:30AM to 4:30PM</p>
+                                            <p>Sunday : All sunday close</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- que-modal stat -->
+    <div class="modal fade que-modal" id="que-modal" aria-modal="true" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="pop-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="feather-x"></i></button>
+                    <div class="product-form-list">
+                        <div class="single-product-wrap">
+                            <div class="product-image">
+                                <a class="pro-img" href="collection.html">
+                                    <img class="img-fluid img1 resp-img1" src="img/product-list/p-1.jpg" alt="p-1">
+                                    <img class="img-fluid img2 resp-img2" src="img/product-list/p-2.jpg" alt="p-2">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-rating">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="spr-badge-caption">2 reviews</span>
+                                    </span>
+                                </div>
+                                <h6>
+                                    <a href="collection.html">A bekery doughnuts</a>
+                                </h6>
+                                <div class="price-box">
+                                    <span class="new-price">€21,00</span>
+                                    <span class="old-price">€25,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask-form">
+                        <h6>Ask a question</h6>
+                        <form method="post" class="contact-form">
+                            <input type="hidden" name="contact[product url]" value="">
+                            <div class="form-grp">
+                                <input type="text" name="contact[name]" required="" placeholder="Your name*">
+                                <input type="text" name="contact[phone]" placeholder="Your phone number">
+                                <input type="email" name="contact[email]" required="" placeholder="Your email*">
+                                <textarea name="contact[question]" rows="4" required=""
+                                    placeholder="Your message*"></textarea>
+                                <p>* Required fields</p>
+                                <button type="submit" class="btn-style2">Submit Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- que-modal end -->
+    <!-- search-popup start -->
+    <div class="modal fade" id="seachmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="crap-search">
+                                    <!-- search-button-close start -->
+                                    <div class="button-close">
+                                        <button type="button" class="search-close" data-bs-dismiss="modal"><i
+                                                class="feather-x"></i></button>
+                                    </div>
+                                    <!-- search-button-close end -->
+                                    <!-- search-form start -->
+                                    <form method="get" class="search-bar">
+                                        <div class="form-search">
+                                            <input type="search" name="q" placeholder="Search product here.."
+                                                class="input-text" required>
+                                            <button type="submit" class="search-btn"><i
+                                                    class="feather-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <!-- search-form end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-popup end -->
+    <!-- mobile-menu start -->
+    <div class="mobile-menu" id="menu-toggle">
+        <div class="main-menu-area">
+            <!-- box-header start -->
+            <div class="box-header"><button class="close-menu" type="button"><i class="feather-x"></i></button></div>
+            <!-- box-header end -->
+            <div class="megamenu-content">
+                <div class="mainwrap collapse show" id="resp-main">
+                    <ul class="main-menu">
+                        <li class="menu-link">
+                            <a href="index.html" class="link-title">
+                                <span class="sp-link-title">Home</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <a href="#resp-home" data-bs-toggle="collapse" class="link-title link-title-lg">
+                                <span class="sp-link-title">Home</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <div class="menu-dropdown single-menu collapse" id="resp-home">
+                                <ul class="container ul p-0">
+                                    <li class="singlemenu-li">
+                                        <a href="index.html" class="singlelink-title">
+                                            <span class="sp-link-title">01 Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="index-2.html" class="singlelink-title">
+                                            <span class="sp-link-title">02 Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="index-3.html" class="singlelink-title">
+                                            <span class="sp-link-title">03 Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="index-4.html" class="singlelink-title">
+                                            <span class="sp-link-title">04 Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="index-5.html" class="singlelink-title">
+                                            <span class="sp-link-title">05 Home</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-link">
+                            <a href="collection.html" class="link-title">
+                                <span class="sp-link-title">Product</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <a href="#resp-single-product" data-bs-toggle="collapse" class="link-title link-title-lg">
+                                <span class="sp-link-title">Product</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <div class="menu-dropdown product-menu collapse" id="resp-single-product">
+                                <ul class="container ul p-0">
+                                    <li class="productlink-li">
+                                        <a href="collection.html" class="productlink-title">
+                                            <span class="sp-link-title">Shop page</span>
+                                        </a>
+                                        <a href="#resp-product-page" class="productlink-title productlink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">Shop page</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="productsupmenu-dropdown collapse" id="resp-product-page">
+                                            <li class="productsupmenu-li">
+                                                <a href="collection.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">01 Collection</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="collection-without.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">02 Collection left</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="collection-right.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">03 Collection right</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="collection-list.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">04 Collection list</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="collection-list-without.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">05 Collection list left</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="collection-list-right.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">06 Collection list right</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="productlink-li">
+                                        <a href="collection.html" class="productlink-title">
+                                            <span class="sp-link-title">Product page</span>
+                                        </a>
+                                        <a href="#resp-shop-page" class="productlink-title productlink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">Product page</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="productsupmenu-dropdown collapse" id="resp-shop-page">
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">01 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template2.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">02 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template3.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">03 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template4.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">04 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template5.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">05 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template6.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">06 Product style</span>
+                                                </a>
+                                            </li>
+                                            <li class="productsupmenu-li">
+                                                <a href="product-template7.html" class="productsuplink-title">
+                                                    <span class="sp-link-title">07 Product style</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="productlink-li">
+                                        <div class="menu-product">
+                                            <ul class="product-ul">
+                                                <li class="product-li">
+                                                    <div class="product-menu-list">
+                                                        <div class="single-product-wrap">
+                                                            <div class="product-image">
+                                                                <a href="product-template.html" class="pro-img">
+                                                                    <img src="img/product/p-3.jpg"
+                                                                        class="img-fluid img1" alt="p-3">
+                                                                    <img src="img/product/p-4.jpg"
+                                                                        class="img-fluid img2" alt="p-4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <h6><a href="product-template.html">A bekery
+                                                                        doughnuts</a></h6>
+                                                                <div class="price-box">
+                                                                    <span class="new-price">€21,00</span>
+                                                                    <span class="old-price">€25,00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="product-li">
+                                                    <div class="product-menu-list">
+                                                        <div class="single-product-wrap">
+                                                            <div class="product-image">
+                                                                <a href="product-template.html" class="pro-img">
+                                                                    <img src="img/product/p-9.jpg"
+                                                                        class="img-fluid img1" alt="p-9">
+                                                                    <img src="img/product/p-10.jpg"
+                                                                        class="img-fluid img2" alt="p-10">
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <h6><a href="product-template.html">The bread a
+                                                                        fresh</a></h6>
+                                                                <div class="price-box">
+                                                                    <span class="new-price">€25,00</span>
+                                                                    <span class="old-price">€35,00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-product-btn">
+                                                <a href="collection.html" class="menu-pro-link">
+                                                    <span class="menu-title">See more</span>
+                                                    <span class="menu-icon"><i class="bi bi-chevron-right"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="productlink-li">
+                                        <div class="menu-product">
+                                            <ul class="product-ul">
+                                                <li class="product-li">
+                                                    <div class="product-menu-list">
+                                                        <div class="single-product-wrap">
+                                                            <div class="product-image">
+                                                                <a href="product-template.html" class="pro-img">
+                                                                    <img src="img/product/p-1.jpg"
+                                                                        class="img-fluid img1" alt="p-1">
+                                                                    <img src="img/product/p-2.jpg"
+                                                                        class="img-fluid img2" alt="p-2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <h6><a href="product-template.html">Candy nut
+                                                                        chocolate</a></h6>
+                                                                <div class="price-box">
+                                                                    <span class="new-price">€11,00</span>
+                                                                    <span class="old-price">€19,00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="product-li">
+                                                    <div class="product-menu-list">
+                                                        <div class="single-product-wrap">
+                                                            <div class="product-image">
+                                                                <a href="product-template.html" class="pro-img">
+                                                                    <img src="img/product/p-7.jpg"
+                                                                        class="img-fluid img1" alt="p-7">
+                                                                    <img src="img/product/p-8.jpg"
+                                                                        class="img-fluid img2" alt="p-8">
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <h6><a href="product-template.html">Sandwich olka
+                                                                        bread</a></h6>
+                                                                <div class="price-box">
+                                                                    <span class="new-price">$45.00</span>
+                                                                    <span class="old-price">$54.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-product-btn">
+                                                <a href="collection.html" class="menu-pro-link">
+                                                    <span class="menu-title">See more</span>
+                                                    <span class="menu-icon"><i class="feather-chevron-right"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-link">
+                            <a href="collection.html" class="link-title">
+                                <span class="sp-link-title">Collection</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <a href="#resp-single-collection" class="link-title link-title-lg"
+                                data-bs-toggle="collapse">
+                                <span class="sp-link-title">Collection</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <div class="menu-dropdown banner-menu collapse" id="resp-single-collection">
+                                <ul class="container ul p-0">
+                                    <li class="bannermenu-li banner-hover">
+                                        <a href="collection.html" class="collection-img banner-img">
+                                            <img src="img/menu/menu-banner-01.jpg" class="img-fluid"
+                                                alt="menu-banner-01">
+                                        </a>
+                                        <a href="collection.html" class="collection-title">
+                                            <span>Bread</span>
+                                        </a>
+                                    </li>
+                                    <li class="bannermenu-li banner-hover">
+                                        <a href="collection.html" class="collection-img banner-img">
+                                            <img src="img/menu/menu-banner-02.jpg" class="img-fluid"
+                                                alt="menu-banner-02">
+                                        </a>
+                                        <a href="collection.html" class="collection-title">
+                                            <span>Cakes</span>
+                                        </a>
+                                    </li>
+                                    <li class="bannermenu-li banner-hover">
+                                        <a href="collection.html" class="collection-img banner-img">
+                                            <img src="img/menu/menu-banner-03.jpg" class="img-fluid"
+                                                alt="menu-banner-03">
+                                        </a>
+                                        <a href="collection.html" class="collection-title">
+                                            <span>Bun</span>
+                                        </a>
+                                    </li>
+                                    <li class="bannermenu-li banner-hover">
+                                        <a href="collection.html" class="collection-img banner-img">
+                                            <img src="img/menu/menu-banner-04.jpg" class="img-fluid"
+                                                alt="menu-banner-04">
+                                        </a>
+                                        <a href="collection.html" class="collection-title">
+                                            <span>Pastries</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-link">
+                            <a href="blog-grid.html" class="link-title">
+                                <span class="sp-link-title">Blogs</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <a href="#resp-single-blog" data-bs-toggle="collapse" class="link-title link-title-lg">
+                                <span class="sp-link-title">Blogs</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <div class="menu-dropdown single-menu collapse" id="resp-single-blog">
+                                <ul class="container ul p-0">
+                                    <li class="singlemenu-li">
+                                        <a href="blog-grid-without.html" class="singlelink-title">
+                                            <span class="sp-link-title">01 Blog grid</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="blog-grid.html" class="singlelink-title">
+                                            <span class="sp-link-title">02 Blog grid left</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="blog-grid-right.html" class="singlelink-title">
+                                            <span class="sp-link-title">03 Blog grid right</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="article-post-without.html" class="singlelink-title">
+                                            <span class="sp-link-title">04 Article post</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="article-post.html" class="singlelink-title">
+                                            <span class="sp-link-title">05 Article post left</span>
+                                        </a>
+                                    </li>
+                                    <li class="singlemenu-li">
+                                        <a href="article-post-right.html" class="singlelink-title">
+                                            <span class="sp-link-title">06 Article post right</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-link">
+                            <a href="about-us.html" class="link-title">
+                                <span class="sp-link-title">Pages</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <a href="#resp-pages" class="link-title link-title-lg" data-bs-toggle="collapse">
+                                <span class="sp-link-title">Pages</span>
+                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                            </a>
+                            <div class="menu-dropdown sub-menu collapse" id="resp-pages">
+                                <ul class="container p-0 ul">
+                                    <li class="submenu-li">
+                                        <a href="about-us.html" class="sublink-title">
+                                            <span class="sp-link-title">About us</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#resp-about-us" class="sublink-title sublink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">About us</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="supmenu-dropdown collapse" id="resp-about-us">
+                                            <li class="supmenu-li">
+                                                <a href="about-us.html" class="suplink-title">
+                                                    <span class="sp-link-title">About us</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="about-us-2.html" class="suplink-title">
+                                                    <span class="sp-link-title">About us 2</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="about-us-3.html" class="suplink-title">
+                                                    <span class="sp-link-title">About us 3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="my-account.html" class="sublink-title">
+                                            <span class="sp-link-title">My account</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#resp-account" class="sublink-title sublink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">My account</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="supmenu-dropdown collapse" id="resp-account">
+                                            <li class="supmenu-li">
+                                                <a href="order-history.html" class="suplink-title">
+                                                    <span class="supmenu-title">Order</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="profile.html" class="suplink-title">
+                                                    <span class="supmenu-title">Profile</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="pro-address.html" class="suplink-title">
+                                                    <span class="supmenu-title">Address</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="pro-wishlist.html" class="suplink-title">
+                                                    <span class="supmenu-title">Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="pro-tickets.html" class="suplink-title">
+                                                    <span class="supmenu-title">My tickets</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="billing-info.html" class="suplink-title">
+                                                    <span class="supmenu-title">Billing info</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="track-page.html" class="suplink-title">
+                                                    <span class="supmenu-title">Track page</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="order-complete.html" class="suplink-title">
+                                                    <span class="supmenu-title">Order complete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="contact-us.html" class="sublink-title">
+                                            <span class="sp-link-title">Contact us</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#resp-contact-us" class="sublink-title sublink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">Contact us</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="supmenu-dropdown collapse" id="resp-contact-us">
+                                            <li class="supmenu-li">
+                                                <a href="contact-us.html" class="suplink-title">
+                                                    <span class="supmenu-title">Contact us</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="contact-us-2.html" class="suplink-title">
+                                                    <span class="supmenu-title">Contact us 2</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="javascript:void(0)" class="sublink-title">
+                                            <span class="sp-link-title">Checkout</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#resp-checkout" class="sublink-title sublink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">Checkout</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="supmenu-dropdown collapse" id="resp-checkout">
+                                            <li class="supmenu-li">
+                                                <a href="checkout-style1.html" class="suplink-title">
+                                                    <span class="supmenu-title">Checkout style 1</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="checkout-style2.html" class="suplink-title">
+                                                    <span class="supmenu-title">Checkout style 2</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="checkout-style3.html" class="suplink-title">
+                                                    <span class="supmenu-title">Checkout style 3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="javascript:void(0)" class="sublink-title">
+                                            <span class="sp-link-title">Features</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <a href="#resp-feature" class="sublink-title sublink-title-lg"
+                                            data-bs-toggle="collapse">
+                                            <span class="sp-link-title">Features</span>
+                                            <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                                        </a>
+                                        <ul class="supmenu-dropdown collapse" id="resp-feature">
+                                            <li class="supmenu-li">
+                                                <a href="cancellation.html" class="suplink-title">
+                                                    <span class="supmenu-title">Cancellation</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="cart-page.html" class="suplink-title">
+                                                    <span class="supmenu-title">Cart page</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="wishlist-product.html" class="suplink-title">
+                                                    <span class="supmenu-title">Wishlist product</span>
+                                                </a>
+                                            </li>
+                                            <li class="supmenu-li">
+                                                <a href="sitemap.html" class="suplink-title">
+                                                    <span class="supmenu-title">Sitemap</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="faq.html" class="sublink-title">
+                                            <span class="sp-link-title">Faq's</span>
+                                        </a>
+                                        <a href="faq.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Faq's</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="privacy-policy.html" class="sublink-title">
+                                            <span class="sp-link-title">Privacy policy</span>
+                                        </a>
+                                        <a href="privacy-policy.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Privacy policy</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="payment-policy.html" class="sublink-title">
+                                            <span class="sp-link-title">Payment policy</span>
+                                        </a>
+                                        <a href="payment-policy.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Payment policy</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="terms-condition.html" class="sublink-title">
+                                            <span class="sp-link-title">Terms & condition</span>
+                                        </a>
+                                        <a href="terms-condition.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Terms & condition</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="return-policy.html" class="sublink-title">
+                                            <span class="sp-link-title">Return policy</span>
+                                        </a>
+                                        <a href="return-policy.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Return policy</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="404.html" class="sublink-title">
+                                            <span class="sp-link-title">404</span>
+                                        </a>
+                                        <a href="404.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">404</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a href="coming-soon.html" class="sublink-title">
+                                            <span class="sp-link-title">Coming soon</span>
+                                        </a>
+                                        <a href="coming-soon.html" class="sublink-title sublink-title-lg">
+                                            <span class="sp-link-title">Coming soon</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mega-menu end -->
+        </div>
+    </div>
+    <!-- mobile-menu end -->
+    <!-- mini-cart start -->
+    <div id="minicart" class="mini-cart">
+        <div class="cart-text">
+            <!-- minicart-empty start -->
+            <p class="d-none">No products in the cart.</p>
+            <!-- minicart-empty end -->
+            <!-- minicart-fill start -->
+            <p id="count">
+
+            </p>
+            <!-- minicart-fill end -->
+            <!-- minicart-close start -->
+
+            <button class="cart-close"><i class="feather-x"></i></button>
+            <!-- minicart-close end -->
+        </div>
+        <!-- minicart empty-content start -->
+        <div class="empty-cart d-none">
+            <span class="cart-icon"><i class="bi bi-bag-dash"></i></span>
+            <a href="collection.html" class="btn btn-style">Continue shopping</a>
+        </div>
+        <!-- minicart empty-content end -->
+        <ul class="cart-item">
+
+
+        </ul>
+        <!-- minicart-total start -->
+        <ul class="subtotal-area">
+            <li class="subtotal-info">
+                <div id="subtotal" class="subtotal-titles">
+                    <!-- minicart total-title start -->
+                    <h6 class="cart-total">Subtotal:</h6>
+                    <!-- minicart total-title end -->
+                    <!-- minicart total-price start -->
+
+                    <!-- minicart total-price end -->
+                </div>
+            </li>
+            <li class="mini-info">
+                <!-- minicart agree-text start -->
+                <label class="box-area">
+                    <span class="agree-text">I have read and agree with the <a href="terms-condition.html">terms &
+                            condition.</a></span>
+                    <input type="checkbox" class="cust-checkbox">
+                    <span class="cust-check"></span>
+                </label>
+                <!-- minicart agree-text end -->
+                <!-- minicart button start -->
+                <div class="cart-btn">
+                    <a onclick="checkoutCart()" class="btn btn-style2">View cart</a>
+                </div>
+                <!-- minicart button end -->
+            </li>
+        </ul>
+    </div>
+    <!-- minicart end -->
+    <!-- quickview modal start -->
+    <div class="productmodal">
+        <div class="modal fade" id="quickview" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-quickview">Quickview</h6>
+                        <button type="button" class="close" data-bs-dismiss="modal"><i class="feather-x"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- swiper slider start -->
+                        <div class="quickview-main-area">
+                            <div class="quickview-slider">
+                                <div class="swiper gallery-top">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="product-template.html"><img src="img/product/p-1.jpg"
+                                                    class="img-fluid" alt="p-1"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="product-template.html"><img src="img/product/p-2.jpg"
+                                                    class="img-fluid" alt="p-2"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="product-template.html"><img src="img/product/p-3.jpg"
+                                                    class="img-fluid" alt="p-3"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="product-template.html"><img src="img/product/p-4.jpg"
+                                                    class="img-fluid" alt="p-4"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="product-template.html"><img src="img/product/p-5.jpg"
+                                                    class="img-fluid" alt="p-5"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button">
+                                        <button class="quick-prev"><i class="fas fa-chevron-left"></i></button>
+                                        <button class="quick-next"><i class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="swiper gallery-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="javascript:void(0)"><img src="img/product/p-1.jpg"
+                                                    class="img-fluid" alt="p-1"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:void(0)"><img src="img/product/p-2.jpg"
+                                                    class="img-fluid" alt="p-2"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:void(0)"><img src="img/product/p-3.jpg"
+                                                    class="img-fluid" alt="p-3"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:void(0)"><img src="img/product/p-4.jpg"
+                                                    class="img-fluid" alt="p-4"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:void(0)"><img src="img/product/p-5.jpg"
+                                                    class="img-fluid" alt="p-5"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- swiper slider end -->
+                            <!-- quick-view content start -->
+                            <div class="quick-view-content">
+                                <div class="product-rating">
+                                    <span class="star-rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                </div>
+                                <div class="product-title">
+                                    <h6 class="product_title">Candy nut chocolate</h6>
+                                </div>
+                                <!-- product-price start -->
+                                <div class="price-box">
+                                    <span class="new-price">€11,00</span>
+                                    <span class="old-price">€19,00</span>
+                                </div>
+                                <!-- product-price end -->
+                                <div class="product-desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magn</p>
+                                </div>
+                                <form method="post">
+                                    <div class="quick-view-select variants select-option-part">
+
+                                    </div>
+                                    <div class="product-quantity-action">
+                                        <h6>Quantity:</h6>
+                                        <div class="product-quantity">
+                                            <div class="cart-plus-minus">
+                                                <button class="dec qtybutton minus"><i
+                                                        class="fa-solid fa-minus"></i></button>
+                                                <input type="text" name="quantity" value="1">
+                                                <button class="inc qtybutton plus"><i
+                                                        class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quickview-buttons">
+                                        <button type="submit" class="addtocartqv"><span class="cart-title">Add to
+                                                cart</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- quick-view content end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- quickview modal end -->
+    <!-- screen-bg start -->
+    <div class="screen-bg"></div>
+    <!-- screen-bg end -->
+    <!-- preloader start -->
+    <!-- <div class="preloader">
+            <div class="loader"></div>
+        </div> -->
+    <!-- preloader end -->
+    <!-- back-to-top start -->
+    <a href="javascript:void(0)" id="top" class="scroll">
+        <span><i class="feather-arrow-up"></i></span>
+    </a>
+    <!-- back-to-top end -->
+    <!-- notification-bottom start -->
+    <div class="notification-bottom">
+        <ul class="shop-element-menu navigation-menu">
+            <li class="side-wrap home-wrap">
+                <div class="home-wrapper">
+                    <a href="index.html" class="home-modal">
+                        <span class="home-icon"><i class="feather-home"></i></span>
+                        <span class="header-title">Home</span>
+                    </a>
+                </div>
+            </li>
+            <li class="side-wrap search-wrap">
+                <div class="search-wrapper">
+                    <a href="#seachmodal" data-bs-toggle="modal" class="search-modal">
+                        <span class="search-icon"><i class="feather-search"></i></span>
+                        <span class="header-title">Search</span>
+                    </a>
+                </div>
+            </li>
+            <li class="side-wrap wishlist-wrap">
+                <div class="wishlist-wrapper">
+                    <div class="wish-det">
+                        <a href="wishlist-product.html" class="wishlist-count">
+                            <span class="wishlist-icon"><i class="feather-heart"></i></span>
+                            <span class="wishlist-counter">5</span>
+                            <span class="header-title">Wishlist</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="side-wrap cart-wrap">
+                <div class="cart-wrapper">
+                    <div class="cart-det">
+                        <a href="javascript:void(0)" class="add-to-cart cart-count">
+                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
+                            <span class="cart-counter">8</span>
+                            <span class="header-title">Cart</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="side-wrap user-wrap">
+                <div class="user-wrapper">
+                    <a href="login-account.html" class="user-login">
+                        <span class="user-icon"><i class="feather-user"></i></span>
+                        <span class="header-title">User</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- notification-bottom end -->
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- owl js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- swiper-bundle js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- counter js -->
+    <script src="js/counter.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- Product Js -->
+    <script src="js/product-template4.js"> </script>
+    <script>
+        function plus(event) {
+            event.preventDefault();
+            var quantityInput = document.getElementById("quantity");
+            var currentQuantity = parseInt(quantityInput.value);
+            quantityInput.value = currentQuantity ;
+            updatePrice(index, currentQuantity + 1);
+        }
+
+        // Decrement quantity
+        function minus(event, index) {
+            event.preventDefault();
+            var quantityInput = document.getElementById("quantity");
+            var currentQuantity = parseInt(quantityInput.value);
+            if (currentQuantity > 1) {
+                quantityInput.value = currentQuantity ;
+                updatePrice(index, currentQuantity - 1);
+            }
+        } 
+    </script>
+    <script>src = "https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+
+    <script>
+            async function AddNewComment() {
+                event.preventDefault(); // Prevent the default form submission behavior
+                // Retrieve ProductID and UserID from localStorage
+                let productId = localStorage.getItem("productId");
+                let userId = localStorage.getItem("UserID");
+
+                // Check if ProductID and UserID are available
+                if (!productId || !userId) {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Product ID or User ID is missing.",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                    return;
+                }
+
+                // Get the current date and time
+                let createdAt = new Date().toISOString(); // Format date to ISO string (e.g., "2024-09-09T12:34:56.789Z")
+
+                // Set the URL for the API endpoint
+                let URL = `https://localhost:44325/api/productDetails/CommentOnProduct`;
+
+                // Get the form and create a FormData object
+                let form = document.getElementById("CommentForm");
+                let formData = new FormData(form);
+                formData.append("ProductId", productId); // Append ProductId from localStorage
+                formData.append("UserId", userId); // Append UserId from localStorage
+                formData.append("CreatedAt", createdAt); // Append the current timestamp
+
+                // Send the POST request using fetch
+                let response = await fetch(URL, {
+                    method: "POST",
+                    body: new URLSearchParams(formData), // Convert FormData to URL-encoded format
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                });
+
+                // Handle the response
+                if (response.ok) {
+                    // Swal.fire({
+                    //   title: "Success!",
+                    //   text: "Comment Added Successfully!",
+                    //   icon: "success",
+                    //   confirmButtonText: "OK",
+                    // });
+                    alert("done");
+                } else {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "There was an issue adding the comment.",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            }
+
+
+
+        //             async function BuyPro() {
+        //   localStorage.setItem("productId", 1);
+        //   var id = localStorage.getItem("productId");
+        //   let url = `https://localhost:44325/api/productDetails/GetOneProductByID/${id}`;
+
+        //   let response = await fetch(url);
+        //   let data = await response.json();
+
+        //   let Addd = document.getElementById("AddedToCart");
+
+        //   if (Addd) {
+        //     Addd.innerHTML += `
+        //       <a onclick="Buy(${data.productId})" href="cart-page.html" class="btn btn-cart btn_theme">
+        //         <span>Buy now</span>
+        //       </a>`;
+        //   }
+
+        //   console.log(data);
+        // }
+
+        // BuyPro();
+
+        ////////////////////////////////////////////////////////////////////////////////Break////////////////////////////////////////////////////////////////////////////////
+
+        async function Buy() {
+            var NewQuantity = document.getElementById("quantity").value;
+            var id = localStorage.getItem("productId");
+
+            let url = "https://localhost:44325/api/CartItem/addtocart";
+
+            var request = {
+                productId: id,
+                quantity: NewQuantity,
+                cartId: localStorage.CARTID,
+            };
+
+            let response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(request),
+            });
+
+            window.location.href = "cart-page.html";
+        }
+
+        //////////////////////////////////////////////////////////////////////////////////reviwe
+
+        async function ProductRating() {
+            const productId = 1;
+            const url = ` https://localhost:44325/api/productDetails/GetOneProductByID/${productId}`;
+            const response = await fetch(url);
+            const { averageRate } = await response.json(); // افترض أن الاستجابة تحتوي على متوسط التقييم
+            if (averageRate != null) {
+                const starRatingElement = document.querySelector(
+                    "#ProductRating .star-rating"
+                );
+                const fullStars = Math.floor(averageRate);
+                const halfStar = averageRate % 1 >= 0.5;
+                const totalStars = 5;
+                starRatingElement.innerHTML = ` ${'<i class="fas fa-star"></i>'.repeat(
+                    fullStars
+                )
+                    }${halfStar ? '<i class="fas fa-star-half-alt"></i>' : ""
+                    }${'<i class="far fa-star"></i>'.repeat(
+                        totalStars - fullStars - (halfStar ? 1 : 0)
+                    )
+                    }`;
+                const captionElement = document.querySelector(
+                    "#ProductRating .spr-badge-caption"
+                );
+                captionElement.textContent = `${averageRate} out of 5 stars`;
+            } else {
+                console.error("Rating data is missing or invalid");
+            }
+        }
+        ProductRating();
+
+        async function CheckRate() {
+            try {
+                let url = `https://localhost:44325/api/productDetails/checkrating`;
+                let response = await fetch(url);
+                let data = await response.json();
+
+                // افترض أن البيانات المسترجعة هي قيمة التقييم
+                const averageRate = data; // تأكد من أن هذا هو نوع البيانات الصحيح
+
+                const starContainer = document.querySelector("#ProductRating .star-rating");
+                const ratingText = document.querySelector("#noReview");
+
+                starContainer.innerHTML = ''; // إعادة تعيين محتوى النجوم
+
+                const fullStars = Math.floor(averageRate);
+                const halfStar = averageRate % 1 >= 0.5;
+                const totalStars = 5;
+
+                // إنشاء HTML للنجوم
+                starContainer.innerHTML += `${'<i class="fas fa-star"></i>'.repeat(fullStars)}${halfStar ? '<i class="fas fa-star-half-alt"></i>' : ""
+                    }${'<i class="far fa-star"></i>'.repeat(totalStars - fullStars - (halfStar ? 1 : 0))}`;
+
+                // إضافة نص التقييم
+                ratingText.textContent = ` ${averageRate.toFixed(1)} out of 5 stars`;
+            } catch (error) {
+                console.error("Error fetching rating data:", error);
+            }
+        }
+        CheckRate();
+
+
+
+
+        async function getAllCategories() {
+            var CatURL = "https://localhost:44325/api/Categories/GetAllCategories";
+            var response = await fetch(CatURL);
+            var data = await response.json();
+            let CategoriesList = document.getElementById("CategoriesList");
+            console.log(data);
+            data.forEach(element => {
+                CategoriesList.innerHTML += `
+                                <li class="singlemenu-li">
+                                <a onclick="setCategory(${element.categoryId})" class="singlelink-title">
+                                <span class="sp-link-title">${element.categoryName}</span>
+                                </a>
+                                </li>`
+            })
+        };
+        getAllCategories();
+        function setCategory(catID) {
+            localStorage.selectedCategoryId = catID;
+            window.location.href = "collection.html";
+        }
+
+        var loginContainer = document.getElementById("loginContainer");
+        if (localStorage.UserID == null) {
+            loginContainer.innerHTML = `
+                                                   <a href="login-account.html" class="acc-ti">
+                                                    <span class="user-icon"><i class="feather-user"></i></span>
+                                                    <div class="icon-heading">
+                                                        <h6 class="wishlist-title">MY ACCOUNT</h6>
+                                                        <span>Login &amp; Register</span>
+                                                    </div>
+                                                </a>`;
+        }
+        else {
+            loginContainer.innerHTML = `
+                                            <div class="acc-title" id="loginContainer">
+                                                <div class="user-actions">
+                                                     <a href="profile.html" class="acc-ti">
+                                                       <span class="user-icon"><i class="feather-user"></i></span>
+                                                       <div class="icon-heading">
+                                                           <h6 class="wishlist-title">PROFILE</h6>
+                                                       </div>
+                                                    </a>
+                                                    <a onclick="logout()" class="acc-ti">
+                                                       <span class="user-icon"><i class="feather-user"></i></span>
+                                                       <div class="icon-heading">
+                                                           <h6 class="wishlist-title">LOGOUT</h6>
+                                                       </div>
+                                                    </a>
+                                                </div>
+                                            </div>`;
+        }
+
+        function logout() {
+            localStorage.removeItem("UserID");
+            localStorage.removeItem("jwtToken");
+            localStorage.removeItem("UserType");
+            localStorage.removeItem("CARTID");
+            window.location.href = "index-2.html";
+        }
+        function clearCategoryID(){
+            localStorage.removeItem("selectedCategoryId");
+            window.location.href="collection.html";
+        }
+    </script>
+    <script src="minicart.js"></script>
+
+</body>
+
+<!-- Mirrored from spacingtech.com/html/banno/banno-ltr/product-template4.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 18:48:16 GMT -->
+
+</html>
